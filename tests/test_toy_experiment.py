@@ -12,3 +12,5 @@ def test_toy_experiment_recovers_geometry(tmp_path: Path):
     metrics = json.loads((out / "toy_metrics.json").read_text())
     assert metrics["deformation_nontrivial_rmse"] > 1e-3
     assert metrics["self_consistency_rmse"] < 1e-9
+    assert (out / "toy_topdown.svg").exists()
+    assert (out / "toy_profile.svg").exists()

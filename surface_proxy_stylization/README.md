@@ -32,3 +32,5 @@ python toy_surface_proxy_experiment.py --out_dir ./surface_proxy_outputs/toy
 Outputs:
 - `toy_metrics.json`: non-trivial deformation and self-consistency metrics.
 - `toy_preview.json`: before/after sample gaussian center values.
+- `toy_topdown.svg`: 俯视图，可视化 proxy 形变与 gaussian 位移。
+- `toy_profile.svg`: 半径-高度曲线，展示 bump 形变趋势。
